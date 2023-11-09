@@ -1,14 +1,13 @@
 
 import Link from "next/link"
+import InputSearch from "@/components/Utilities/Navbar/InputSearch"
 
 const Navbar = () => {
     return (
-        <header className="bg-blue-950">
-            <div className="flex md:flex-row flex-col justify-between p-4 gap-2">
+        <header className="bg-gradient-to-r from-slate-800 via-slate-950 to-blue-950 border-b border-slate-500">
+            <div className="flex md:flex-row flex-col justify-between md:items-center p-4 gap-2">
                 <Link href="/" className="font-bold text-white text-2xl">CodAnimeList</Link>
-                <div className="flex items-center rounded-md px-4 duration-300 cursor-pointer bg-blue-900 text-white">
-                <input placeholder="cari anime..." className="bg-transparent focus:outline-none"/>
-                </div>
+                <InputSearch/>
             </div>
         </header>
     ) 
