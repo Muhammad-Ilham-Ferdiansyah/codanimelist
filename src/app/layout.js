@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gradient-to-r from-slate-800 via-slate-950 to-blue-950`}>
+      <body className={`${inter.className} bg-slate-950`}>
         <Navbar/>
         {children}
       </body>
